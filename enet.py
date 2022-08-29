@@ -342,7 +342,7 @@ class Channel:
                   "values":[{"valueTypeID":"VT_SWITCH",
                              "value":True}]}
         result = self._device.client.request(URL_VIZ, "callInputDeviceFunction", params)
-        log.info(f"{self.name} turn_off()")
+        log.info(f"{self.name} turn_on()")
         return result
 
     def __repr__(self):
