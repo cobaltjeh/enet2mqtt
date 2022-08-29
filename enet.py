@@ -217,7 +217,10 @@ known_actuators = ["DVT_DA1M",  # Jung 1 channel dimming actuator
                    "DVT_SV1M",  # Jung 1 channel 1-10V dimming actuator
                    "DVT_DA4R",  # 4 channel dimming actuator rail mount
                    "DVT_DA1R",  # 1 channel dimming actuator rail mount
-                   "DVT_SJAR"]  # 8 channel switch actuator
+                   "DVT_SJAR",  # 8 channel switch actuator
+                   "DVT_SA2M",  # 2 channel switch actuator mini
+                   "DVT_SJA1",  # system 2000 top cover blinds (discontinued)
+                   "DVT_S2A1"]  # system 2000 top cover switch (discontinued)
 
 known_sensors = ['DVT_TADO',
                  'DVT_WS2BJF50',
@@ -233,7 +236,9 @@ known_sensors = ['DVT_TADO',
                  'DVT_WS4BJF50CL', #
                  'DVT_BS1BP', # eNet motion detector
                  'DVT_SF1S',  # eNet light sensor
-                 'DVT_WS4BJ'] # eNet radio transmitter module 4-gang
+                 'DVT_WS4BJ', # eNet radio transmitter module 4-gang
+                 'DVT_HS2',   # remote 2-gang
+                 'DVT_HS4']   # remove 4-gang
 
 
 def Device(client, raw):
