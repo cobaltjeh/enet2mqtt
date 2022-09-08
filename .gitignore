@@ -1,0 +1,4 @@
+/env/
+/.vscode
+/devices.json
+/__pycache__

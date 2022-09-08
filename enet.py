@@ -7,6 +7,7 @@ import string
 import random
 import json
 import logging
+import urllib3
 
 log = logging.getLogger(__name__)
 
@@ -35,6 +36,9 @@ class EnetClient:
         self._last_telegram_ts={}
         self.devices = []
 
+        # Disable warnings for ssl certificate, that are filling the logs 
+        if sslverify == "FALSE":
+            urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
     def auth_if_needed(func):
         def auth_wrapper(self, *args, **kwargs):
